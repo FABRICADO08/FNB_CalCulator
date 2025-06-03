@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="calculator-container"> 
+        <h1>Calculator</h1>
+
+        <table >
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="inputBox" value="0" />
+                </td>
+            </tr>
+            <tr>
+                <td  class="ACBtn" onclick="clearInput()">AC</td>
+                <td  class="ACBtn" onclick="clearEntry()">C</td>
+                <td  class="operatorBtn" onclick="percentageBtnPressed()">%</td>
+                <td class="operatorBtn" onclick="operatorBtnPressed('/')">/</td>
+            </tr>
+            <tr>
+                <td class="digitBtn" onclick="digitBtnPressed(7)">7</td>
+                <td class="digitBtn" onclick="digitBtnPressed(8)">8</td>
+                <td class="digitBtn" onclick="digitBtnPressed(9)">9</td>
+                <td class="operatorBtn" onclick="operatorBtnPressed('x')">x</td>
+            </tr>
+            <tr>
+                <td class="digitBtn" onclick="digitBtnPressed(4)">4</td>
+                <td class="digitBtn" onclick="digitBtnPressed(5)">5</td>
+                <td class="digitBtn" onclick="digitBtnPressed(6)">6</td>
+                <td class="operatorBtn" onclick="operatorBtnPressed('-')">-</td>
+            </tr>
+            <tr>
+                <td class="digitBtn" onclick="digitBtnPressed(1)">1</td>
+                <td class="digitBtn" onclick="digitBtnPressed(2)">2</td>
+                <td class="digitBtn" onclick="digitBtnPressed(3)">3</td>
+                <td class="operatorBtn" onclick="operatorBtnPressed('+')">+</td>
+            </tr>
+            <tr>
+                <td class="digitBtn" onclick="digitBtnPressed(0)">0</td>
+                <td  class="digitBtn" onclick="decimalBtnPressed()">.</td>
+                <td colspan="2" class="operatorBtn" onclick="equalBtnPressed()">=</td>
+
+            </tr>
+        
+        </table>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
